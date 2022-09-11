@@ -1,0 +1,80 @@
+/* =====
+  NOTES
+  syntax: 
+  selector{
+      property; value;
+  }
+
+  selectors:
+  - id selector : #[idName]
+  --> target element with attribute: id="idName"
+  - universal selector : * 
+  --> target all elements (least prioritized selector in case there is conflict with the codes
+
+  ===== */
+
+/* =========== Main CSS below ========== */
+
+/* =====
+  Universal Selectors
+===== */
+
+  * {
+    font-family:"Roboto", sans-serif;
+  }
+
+  h1, h2 {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  img {
+    height: 250px;
+    width: 250px;
+    border: 5px solid red;
+    border-radius: 100%;
+  }
+
+
+/* =====
+  Id & Class Selectors
+===== */
+
+#landing {
+  height: 80vh; /* vh- viewport height depends on the height of the user monitor/screen*/
+  display: flex; /* diplay: flex - allows us to align the elements horizontally and vertically */
+  flex-direction: column; /* aligns the flex items into column/vertically */
+  align-items:center; /* aligns the flex items horizontally */
+  justify-content: center; /* aligns the flex items vertically */
+}
+
+#gallery {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  height: 90vh;
+  border-radius: 6px;
+  color: #fff08d;
+  background-color: Pink;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h2 {
+  color: white;
+}
+
+.tools {
+  border: 5px solid #f2f2f2;
+  min-height: 200px;
+  width: 75%; /* % depends on the width of the parent element */
+  margin: 20px;
+  padding: 25px;
+}
